@@ -24,3 +24,11 @@ This is a very simple, bare-bones NodeJS project created for you to use with Doc
 - Attaching to a  container: `docker exec -it`
 - Viewing Docker Process: `docker ps`
 - Viewing Details of Docker Objects: `docker inspect`
+
+
+## Pushing an Image to DockerHub
+
+- Login to DockerHub `docker login --username={YOUR USERNAME}`
+- Tag the image `docker tag simple-node {YOUR USERNAME}/{YOUR REPOSITORY NAME}`
+- Push the tagged image to DockerHut `docker push {TAGGED IMAGE}`
+- Pull the image back into your local machine `docker pull {TAGGED IMAGE}`
